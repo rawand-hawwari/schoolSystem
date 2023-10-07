@@ -25,76 +25,86 @@
         </nav>
 
         <!-- students information form -->
-        <div class="d-flex justify-content-center">
-            <div class="add-std">
-                <form class="d-grid">
-                    <!-- full name -->
-                    <div class="row g-3 justify-content-center">
-                        <label class="col-2" for="fname">Student Name: </label>
-                        <input class="form-control col-6" type="text" name="fname" id="fname">
-                    </div>
-                    <br><br>
-
-                    <!-- date of birth -->
-                    <div class="row g-3 justify-content-center">
-                        <label class="col-2" for="bday">Date of birth: </label>
-                        <input class="form-control col-6" type="date" name="bday" id="bday">
-                    </div>
-                    <br><br>
-
-                    <!-- gender -->
-                    <div class="row g-3 justify-content-center">
-                        <label class="col-2" for="gender">Gender: </label>
-                        <div class="col-6">
-                            <input type="radio" name="gender" id="male" value="male">
-                            <label class="form-check-label" for="male">Male</label>
-                            <input type="radio" name="gender" id="female" value="female">
-                            <label class="form-check-label" for="female">Female</label>
+        <div class="container-sm">
+            <h3 class="p-3">Add Student:</h3>
+            <div class="d-flex justify-content-center">
+                <div class="add-std">
+                    <form class="d-grid">
+                        <!-- full name -->
+                        <div class="row g-3 justify-content-center">
+                            <label class="col-2" for="fname">Student Name: </label>
+                            <input class="form-control col-6" type="text" name="fname" id="fname">
                         </div>
-                    </div>
-                    <br><br>
-                    
-                    <!-- major -->
-                    <div class="row g-3 justify-content-center">
-                        <label class="col-2" for="major">Major</label>
-                        <select class="form-control col-6" id="major">
-                            <option value="administrator">Administrator</option>
-                            <option value="it">IT</option>
-                            <option value="science">Science</option>
-                            <option value="art">Art</option>
-                        </select>
-                    </div>
-                    <br><br>
+                        <br><br>
 
-                    <!-- image -->
-                    <div class="row g-3 justify-content-center">
-                        <label class="col-2" for="image">Upload image</label>
-                        <input type="file" class="form-control-file col-6" id="image">
-                    </div>
-                    <br><br>
+                        <!-- date of birth -->
+                        <div class="row g-3 justify-content-center">
+                            <label class="col-2" for="bday">Date of birth: </label>
+                            <input class="form-control col-6" type="date" name="bday" id="bday">
+                        </div>
+                        <br><br>
 
-                    <!-- phone number -->
-                    <div class="row g-3 justify-content-center">
-                        <label class="col-2" for="phone">Phone Number: </label>
-                        <input class="form-control col-6" type="tel" name="phone" id="phone">
-                    </div>
-                    <br><br>
+                        <!-- gender -->
+                        <div class="row g-3 justify-content-center">
+                            <label class="col-2" for="gender">Gender: </label>
+                            <div class="col-6">
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label class="form-check-label" for="male">Male</label>
+                                <input type="radio" name="gender" id="female" value="female">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                        </div>
+                        <br><br>
+                        
+                        <!-- major -->
+                        <div class="row g-3 justify-content-center">
+                            <label class="col-2" for="major">Major</label>
+                            <select class="form-control col-6" id="major">
+                                <option value="administrator">Administrator</option>
+                                <option value="it">IT</option>
+                                <option value="science">Science</option>
+                                <option value="art">Art</option>
+                            </select>
+                        </div>
+                        <br><br>
 
-                    <!-- grade -->
-                    <div class="row g-3 justify-content-center">
-                        <label class="col-2" for="grade">Grade: </label>
-                        <input class="form-control col-6" type="number" name="grade" id="grade">
-                    </div>
-                </form>
-                <div class="row g-3 justify-content-center">
-                    <button class="col-2" id="submit" onclick="addnew()">Add student</button>
+                        <!-- image -->
+                        <div class="row g-3 justify-content-center">
+                            <label class="col-2" for="img-url">Image URL</label>
+                            <input type="text" class="form-control" id="img-url" aria-describedby="basic-addon3">
+                        </div>
+                        <br><br>
+
+                        <!-- phone number -->
+                        <div class="row g-3 justify-content-center">
+                            <label class="col-2" for="phone">Phone Number: </label>
+                            <input class="form-control col-6" type="tel" name="phone" id="phone">
+                        </div>
+                        <br><br>
+
+                        <!-- grade -->
+                        <div class="row g-3 justify-content-center">
+                            <label class="col-2" for="grade">Grade: </label>
+                            <input class="form-control col-6" type="number" name="grade" id="grade">
+                        </div>
+                        <br><br>
+
+                        <!-- submit button -->
+                        <div class="row g-3 justify-content-center">
+                          <button class="col-2" id="submit" onclick="addnew()">Add student</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
         <br><br>
 
-        <div class="cards d-grid p-3">
-            <div id="card-list" class="row justify-content-center g-3"></div>
+        <!-- studens cards -->
+        <div class="container-sm">
+            <h3 class="p-3">Students Information:</h3>
+            <div class="cards d-grid p-3">
+                <div id="card-list" class="row justify-content-center g-3"></div>
+            </div>
         </div>
         <br><br>
 
